@@ -39,7 +39,7 @@ function AboutMe() {
 
       <div className="mt-6 grid gap-8 sm:grid-cols-[200px_1fr] items-start">
         <img
-          src="../../public/me.jpg"
+          src="/me.jpg"
           alt="Desiree Howell"
           className="w-full rounded-lg object-cover aspect-square"
         />
