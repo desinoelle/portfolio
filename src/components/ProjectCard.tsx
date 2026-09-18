@@ -17,13 +17,17 @@ function ProjectCard({ title, description, src, viewlink, githublink }: Project)
         <h3 className="text-lg font-semibold mb-1">{title}</h3>
         <p className="text-gray-700 mb-4">{description}</p>
         <div className="flex gap-3">
-          <a href={viewlink} target="_blank" rel="noopener noreferrer" className={button}>
-            View
-          </a>
-          <a href={githublink} target="_blank" rel="noopener noreferrer" className={button}>
-            GitHub
-          </a>
-        </div>
+          {viewlink && (
+            <a href={viewlink} target="_blank" rel="noopener noreferrer" className={button}>
+              View
+            </a>
+          )}
+          {githublink && (
+            <a href={githublink} target="_blank" rel="noopener noreferrer" className={button}>
+              GitHub
+            </a>
+          )}
+      </div>
       </div>
     </article>
   )

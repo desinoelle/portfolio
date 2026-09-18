@@ -17,21 +17,19 @@ export const projects: Project[] = [
     description: 'A relationship simulator...with a twist! Made entirely in Unity with C# and free Unity assets.',              // See prompts below
     src: '/WYSLM.png',          // Gameplay screenshot — action, not a menu
     viewlink: 'https://desinoelle.itch.io/would-you-still-love-me-beta',                 // itch.io build, or a YouTube gameplay clip
-    githublink: '',               // Omit this line if the repo isn't public
   },
   {
     title: 'This Portfolio Site',  // Or "Portfolio Site"
     description: 'Hand-built in React, TypeScript, and Tailwind v4 — a ground-up rebuild of the portfolio I made in 2019. Same site, seven years of learning apart.',
     src: 'folio.PNG',          // Screenshot of the site itself
-    viewlink: '',         // Vercel URL once deployed
-    githublink: 'https://github.com/',
+    viewlink: 'https://portfolio-eight-dusky-qu40zca26q.vercel.app/portfolio',         // Vercel URL once deployed
+    githublink: 'https://github.com/desinoelle/portfolio',
   },
   {
     title: 'Bee The Change',                    // UEFN jam entry title
     description: 'Winner of Best Use of Engine Feature by UNCGs Games for a Change Game Jam ',
     src: '/BTC.jpeg',          // Best-looking shot of your level
     viewlink: 'https://www.fortnite.com/@napoli/9756-0088-2319',                 // Fortnite island code link, or video
-    // no githublink — UEFN projects don't have one
   },
   {
     title: 'The Very Hungry Caterpillar',
