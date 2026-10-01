@@ -33,7 +33,7 @@ function Home() {
             View my work
           </Link>
           <a href="/Desiree-Howell-Resume-Final.pdf" target="_blank" rel="noopener noreferrer" className={buttonGhost}>
-            Résumé
+            Resume
           </a>
         </div>
       </section>

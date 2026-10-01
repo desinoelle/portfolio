@@ -22,17 +22,16 @@ export const projects: Project[] = [
     githublink: 'https://github.com/desinoelle/csc481-game-engine'
   },
   {
-    title: 'This Portfolio Site',
-    description: 'Hand-built in React, TypeScript, and Tailwind v4. A ground-up rebuild of the portfolio I made in 2019. Same site, seven years of learning apart.',
-    src: '/folio.PNG',
-    viewlink: 'https://desinoelle.com',
-    githublink: 'https://github.com/desinoelle/portfolio',
-  },
-  {
     title: 'Bee The Change',
     description: 'Winner of Best Use of Engine Feature at UNCG\'s Games for a Change Game Jam. I was the level designer, handling map layout and player flow.',
     src: '/BTC.jpeg',
     viewlink: 'https://www.fortnite.com/@napoli/9756-0088-2319',
+  },
+  {
+    title: 'This Portfolio Site',
+    description: 'Hand-built in React, TypeScript, and Tailwind v4. A ground-up rebuild of the portfolio I made in 2019. Same site, seven years of learning apart.',
+    src: '/folio.PNG',
+    githublink: 'https://github.com/desinoelle/portfolio',
   },
   {
     title: 'Cloverleaf',
