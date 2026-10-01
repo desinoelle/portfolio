@@ -1,39 +1,4 @@
-import { useState } from 'react'
-
-type Status = 'idle' | 'sending' | 'sent' | 'error'
-
 function Contact() {
-  const [form, setForm] = useState({ name: '', email: '', message: '' })
-  const [status, setStatus] = useState<Status>('idle')
-
-  const update = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => setForm({ ...form, [e.target.name]: e.target.value })
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
-    setStatus('sending')
-    try {
-      const res = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          Accept: 'application/json',
-        },
-        body: JSON.stringify(form),
-      })
-      if (!res.ok) throw new Error()
-      setStatus('sent')
-      setForm({ name: '', email: '', message: '' })
-    } catch {
-      setStatus('error')
-    }
-  }
-
-  const field =
-    'w-full px-3 py-2 rounded bg-white/10 text-gray-100 placeholder-gray-500 ' +
-    'focus:outline-none focus:ring-2 focus:ring-gray-100'
-
   const inlineLink = 'text-accent hover:underline'
 
   return (
