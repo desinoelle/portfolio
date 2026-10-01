@@ -41,7 +41,7 @@ function Contact() {
       <h1 className="text-4xl font-bold animate-slide-up">Contact</h1>
 
       <p className="mt-4 text-gray-300">
-        The fastest way to reach me is email, or send a message below.
+        The fastest way to reach me is email.
       </p>
 
       <ul className="mt-4 space-y-1">
@@ -71,73 +71,6 @@ function Contact() {
           </a>
         </li>
       </ul>
-
-      <form onSubmit={handleSubmit} className="mt-10 space-y-4">
-        <div>
-          <label htmlFor="name" className="block mb-1 text-sm">
-            Name
-          </label>
-          <input
-            id="name"
-            name="name"
-            value={form.name}
-            onChange={update}
-            required
-            className={field}
-          />
-        </div>
-
-        <div>
-          <label htmlFor="email" className="block mb-1 text-sm">
-            Email
-          </label>
-          <input
-            id="email"
-            name="email"
-            type="email"
-            value={form.email}
-            onChange={update}
-            required
-            className={field}
-          />
-        </div>
-
-        <div>
-          <label htmlFor="message" className="block mb-1 text-sm">
-            Message
-          </label>
-          <textarea
-            id="message"
-            name="message"
-            rows={6}
-            value={form.message}
-            onChange={update}
-            required
-            className={field}
-          />
-        </div>
-
-        <button
-          type="submit"
-          disabled={status === 'sending'}
-          className="px-5 py-2.5 rounded-md bg-gray-100 text-gray-900 font-medium transition duration-200 hover:-translate-y-0.5 hover:shadow-lg disabled:opacity-50"
-        >
-          {status === 'sending' ? 'Sending...' : 'Send'}
-        </button>
-
-        <p aria-live="polite" className="text-sm">
-          {status === 'sent' && (
-            <span className="text-green-400">
-              Thanks, I&apos;ll get back to you soon.
-            </span>
-          )}
-          {status === 'error' && (
-            <span className="text-red-400">
-              Something went wrong. Please email me directly.
-            </span>
-          )}
-        </p>
-      </form>
     </section>
   )
 }
