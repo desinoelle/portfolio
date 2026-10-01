@@ -32,7 +32,7 @@ function Home() {
           <Link to="/portfolio" className={button}>
             View my work
           </Link>
-          <a href="/Desiree-Howell-Resume-Final.pdf" target="_blank" rel="noopener noreferrer" className={buttonGhost}>
+          <a href="/Desiree-Howell-Resume.pdf" target="_blank" rel="noopener noreferrer" className={buttonGhost}>
             Resume
           </a>
         </div>

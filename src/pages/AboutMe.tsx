@@ -81,7 +81,7 @@ function AboutMe() {
       </ul>
 
       <div className="mt-12 flex flex-wrap gap-3">
-        <a href="/Desiree-Howell-Resume-Final.pdf" target="_blank" rel="noopener noreferrer"className={button}>Download resume</a>
+        <a href="/Desiree-Howell-Resume.pdf" target="_blank" rel="noopener noreferrer"className={button}>Download resume</a>
         <Link to="/contact" className={button}>Get in touch</Link>
       </div>
     </section>
